@@ -29,9 +29,11 @@ public:
         int minSum = kadansmin(nums, n);
         int maxSum = kadansmax(nums, n);
         int circularSum = sum - minSum;
-        if(maxSum > 0){
-            return max(maxSum,circularSum);
+         if(maxSum > 0){
+         return max(maxSum,circularSum);
         }
-        return maxSum;
+         return maxSum;
+
+        
     }
 };
