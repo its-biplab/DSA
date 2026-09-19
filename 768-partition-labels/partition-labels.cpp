@@ -7,7 +7,8 @@ public:
             mp[s[i]] = i;
         }
         int i = 0, j = 0;
-        int end = max(j, mp[s[j]]);
+        // int end = max(j, mp[s[j]]);
+        int end = mp[s[j]];
         int result = 1;
         vector<int>ans;
         while(i < n){
