@@ -36,9 +36,9 @@ public:
         int n = nums.size();
         int i = 0;
         while(i < n){
-            if(nums[i] >= 1 && nums[i] < n){
+            if(nums[i] >= 1 && nums[i] <= n){
             int correctIdx = nums[i] - 1;
-            if(nums[i] >= 1 && nums[i] < n && nums[i] != nums[correctIdx]){
+            if(nums[i] != nums[correctIdx]){
                 swap(nums[i], nums[correctIdx]);
             }else{
                 i++;
