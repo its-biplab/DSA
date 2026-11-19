@@ -7,12 +7,20 @@ public:
    
     
     void push(int x) {
-        q2.push(x);
+       /* q2.push(x);
        while(!q1.empty()){
         q2.push(q1.front());
         q1.pop();
        }
-       swap(q1,q2);
+       swap(q1,q2);*/
+
+       // ONE QUEUE APPROACH
+       int size = q1.size();
+       q1.push(x);
+       for(int i = 0; i < size; i++){
+        q1.push(q1.front());
+        q1.pop();
+       }
       
     }
     
