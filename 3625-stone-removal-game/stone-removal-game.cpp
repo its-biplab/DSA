@@ -11,7 +11,7 @@ public:
     }
 
     bool canAliceWin(int n) {
-        if(n < 10) return false;
+    /*    if(n < 10) return false;
         int amount = 10;
         while(n > 0){
             if(aliceTurn(n,amount)){
@@ -25,5 +25,16 @@ public:
             }else return true;
         }
         return false;
+        */
+        int amount = 10;
+        int turn = 0;
+        while(n >= amount){
+            n -= amount;
+            amount--;
+            turn ++;
+        }
+        return turn%2 == 1;
+
+
     }
 };
